@@ -267,7 +267,8 @@ ingridientsOneElements.forEach((li) => { // Для каждого li в ингр
         arrSelectedIngridiensOne.pop();
         deletePrice (li);
         callingsMinus ();
-        btn ();
+        button.disabled = true;
+        btn();
       }
     } else {
       console.log('Можно выбрать только два разных ингридиента 1');
@@ -318,6 +319,7 @@ ingridientsTwoElements.forEach((li) => { // Для каждого li в ингр
         arrSelectedIngridiensTwo.pop();
         deletePrice (li);
         callingsMinusTwo ();
+        btn();
       }
     } else {
       console.log('Можно выбрать только два разных ингридиента2');
